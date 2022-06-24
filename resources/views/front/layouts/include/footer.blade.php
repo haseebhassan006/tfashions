@@ -46,7 +46,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        <!-- <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="single-widget">
                                 <h3 class="widget-title">{{ __('Brand')}}</h3>
                                 <ul class="widget-menu">
@@ -55,8 +55,8 @@
                                     @endforeach
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4">
+                        </div> -->
+                        <!-- <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="single-widget">
                                 <h3 class="widget-title">{{ __('Customer Service')}}</h3>
                                 <ul class="widget-menu">
@@ -68,7 +68,7 @@
                                     <li class="menu-item"><a class="menu-link" href="{{route('contact.us')}}">{{ __('Contact Us')}}</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">

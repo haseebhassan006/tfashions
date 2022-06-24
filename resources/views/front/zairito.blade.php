@@ -34,7 +34,7 @@
     <!-- hero-section area end here  -->
 
     <!-- brads area start here  -->
-    <div class="brads-area">
+    <!-- <div class="brads-area">
         <div class="container">
             <div class="brads-slide">
                 @foreach($brands as $brand)
@@ -44,11 +44,11 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- brads area start here  -->
 
     <!-- Popular Categories area start here  -->
-    <div class="popular-categories-area section-bg section-top pb-100">
+    <!-- <div class="popular-categories-area section-bg section-top pb-100">
         <div class="container">
             <div class="section-header-area">
                 <div class="row">
@@ -80,7 +80,7 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Popular Categories area end here  -->
 
     <!-- Featured Products area start here  -->
@@ -144,7 +144,7 @@
     <!-- Featured Products area end here  -->
 
     <!-- About Area start here  -->
-    <div class="about-area section">
+    <!-- <div class="about-area section">
         <div class="container">
             <div class="section-header-area">
                 <div class="row">
@@ -166,7 +166,7 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- About Area  end here  -->
 
     <!-- Trending Products area start here  -->
@@ -393,7 +393,7 @@
     <!-- Trending Products area end here  -->
 
     <!-- product banenr area start here  -->
-    <div class="product-banner pb-100">
+    <!-- <div class="product-banner pb-100">
         <div class="container">
             <div class="row">
                 @foreach($promotion as $promo)
@@ -406,10 +406,10 @@
             </div>
             @endforeach
         </div>
-    </div>
+    </div> -->
     <!-- product banner area end here  -->
     <!-- Blog area start here  -->
-    <div class="blog-area section-top section-bg pb-100">
+    <!-- <div class="blog-area section-top section-bg pb-100">
         <div class="container">
             <div class="section-header-area">
                 <div class="row">
@@ -424,9 +424,9 @@
             </div>
 
             <div class="blog-slide">
-                @foreach($blogs as $blog)
+                @foreach($blogs as $blog) -->
                 <!-- Blog Item Start -->
-                <div class="single-grid-blog">
+                <!-- <div class="single-grid-blog">
                     <div class="blog-thumbnail">
                         <a href="{{route('blog.details',$blog->id)}}"><img class="thumbnail-image" src="{{asset(BlogImage().$blog->Small_Image)}}" alt="blog" /></a>
                     </div>
@@ -446,7 +446,7 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Blog area end here  -->
 
     <!-- Image Gallery area start here  -->
@@ -502,7 +502,7 @@
     <!-- Image Gallery area end here  -->
 
     <!-- Testimonial ara start here  -->
-    <div class="testimonial-area section section-bg">
+    <!-- <div class="testimonial-area section section-bg">
         <div class="container">
             <div class="section-header-area text-center">
                 <h3 class="sub-title">{{__('Testimonial')}}</h3>
@@ -511,7 +511,7 @@
             <div class="testimonial-slide-top">
 
                 <!-- Testimonial authors Float Images Start -->
-                @foreach ($testimonial as $test)
+                <!-- @foreach ($testimonial as $test)
                     @if ($loop->iteration == 1)
                         <img src="{{asset(IMG_TESTIMONIAL.$test->Image)}}" alt="img" class="testimonial-float-img testimonial-left-1 position-absolute">
                     @elseif ($loop->iteration == 2)
@@ -529,10 +529,10 @@
                     @elseif ($loop->iteration == 8)
                         <img src="{{asset(IMG_TESTIMONIAL.$test->Image)}}" alt="img" class="testimonial-float-img testimonial-right-4 position-absolute">
                 @endif
-            @endforeach
+            @endforeach -->
             <!-- Testimonial authors Float Images End -->
 
-                <img class="shape-image" src="{{asset('frontend/assets/images/shape.png')}}" alt="shape" />
+              <!--  <img class="shape-image" src="{{asset('frontend/assets/images/shape.png')}}" alt="shape" />
                 <div class="testimonial-image-slide">
                     @foreach ($testimonial as $test)
                         <div class="signle-testimonial-image"><img class="testimonial-image" src="{{asset(IMG_TESTIMONIAL.$test->Image)}}" alt="testimonal-image" /></div>
@@ -559,14 +559,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial ara end here  -->
 @endsection
 
 @section('subscribe_pop_up_modal')
     @if(!session()->has('dontshoW'))
     <!-- Page Load Popup Modal End -->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="popUpModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="modal fade bd-example-modal-lg theme-modal" id="popUpModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body modal1 modal-bg">
@@ -610,7 +610,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     @endif
     <!-- Page Load Popup Modal End -->
     <div id="DoNotSubscribe" data-url="{{ route('do.not.subscribe') }}"></div>

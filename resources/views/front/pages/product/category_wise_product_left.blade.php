@@ -54,7 +54,7 @@
                                 @endforeach
                             </div>
                         </div>
-
+                        <!-- 
                         <div class="single-widget price-widget">
                             <h3 class="widget-title">{{__('Price')}}</h3>
                             <form>
@@ -113,7 +113,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -237,7 +237,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="single-widget price-widget p-0 bg-transparent">
+                <!-- <div class="single-widget price-widget p-0 bg-transparent">
                     <h3 class="widget-title">{{__('Price')}}</h3>
                     <form>
                         <div class="price-wrap">
@@ -293,7 +293,7 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

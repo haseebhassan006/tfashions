@@ -25,7 +25,7 @@
                                     @endforeach
                                 </ul>
                             </div>
-                            <div class="lang-switcher">
+                            <!-- <div class="lang-switcher">
                                 @if(app()->getLocale() == 'en')
                                 <span class="flag"><img src="{{asset(IMG_LANGUAGE.getLanguage('en')->thumb)}}" alt="united-states" /></span>
                                 <a href="javascript:void(0)" class="lang"> {{ getLanguage('en')->name }} <i class="fas fa-angle-down"></i></a>
@@ -40,7 +40,7 @@
                                         <li class="single-lang"><span class="flag"><img src="{{asset(IMG_LANGUAGE.getLanguage('en')->thumb)}}" alt="united-states"/></span><a class="lang-text" href="{{route('locale.switch','en')}}">{{ getLanguage('en')->name }}</a></li>
                                     @endif
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                         @if(Auth::user())
                             <div class="account-switcher">
@@ -181,20 +181,20 @@
 
                 @foreach($all_menus as $menu)
                     @if ($menu->submenus->count() == 0)
-                        <li class="menu-item"><a class="menu-link" href="{{$menu->url}}">{{ langConverter($menu->en_name, $menu->fr_name) }}</a></li>
+                        <!-- <li class="menu-item"><a class="menu-link" href="{{$menu->url}}">{{ langConverter($menu->en_name, $menu->fr_name) }}</a></li> -->
                     @else
-                        <li class="menu-item menu-item-has-children">
+                        <!-- <li class="menu-item menu-item-has-children">
                             <a class="menu-link" href="#">{{ langConverter($menu->en_name, $menu->fr_name) }} <i class="arrow-icon fas fa-angle-down"></i></a>
                             <ul class="sub-menu">
                                 @foreach ($menu->submenus as $submenu)
                                     <li class="sub-menu-item"><a class="sub-menu-link" href="{{ $submenu->url }}">{{ langConverter($submenu->en_name, $submenu->fr_name) }}</a></li>
                                 @endforeach
                             </ul>
-                        </li>
+                        </li> -->
                     @endif
                 @endforeach
                 <li class="menu-item {{Route::is('about.us')|| Route::is('about.us*') ? 'active' : '' }}"><a class="menu-link" href="{{route('about.us')}}">{{ staticMenuName('about-us') }}</a></li>
-                <li class="menu-item {{Route::is('blog')|| Route::is('blog*') ? 'active' : '' }}"><a class="menu-link" href="{{route('blog')}}">{{ staticMenuName('blog') }}</a></li>
+                <!-- <li class="menu-item {{Route::is('blog')|| Route::is('blog*') ? 'active' : '' }}"><a class="menu-link" href="{{route('blog')}}">{{ staticMenuName('blog') }}</a></li> -->
                 <li class="menu-item {{Route::is('contact.us')|| Route::is('contact.us*') ? 'active' : '' }}"><a class="menu-link" href="{{route('contact.us')}}">{{ staticMenuName('contact') }}</a></li>
 
             </ul>

@@ -19,9 +19,11 @@ class AuthController extends Controller
     }
     public  function LoginDashboard(Request $request){
         $user = User::where('email', $request->email)->first();
+      
         if($user->status == INACTIVE) {
             return  redirect()->route('login')->with('toast_error' , __('User is blocked by admin.'));
         }
+        
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password,'is_admin'=>1])) {
             if(Auth::user()->is_admin == 1){
                 return redirect()->route('admin.dashboard');

@@ -71,7 +71,7 @@
                                 </div>
                             </form>
                         </div>
-
+<!-- 
                         <div class="single-widget colors-widget">
                             <h3 class="widget-title">{{__('Colors')}}</h3>
                             <div class="colors-list">
@@ -112,7 +112,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="single-widget colors-widget p-0 bg-transparent">
+                <!-- <div class="single-widget colors-widget p-0 bg-transparent">
                     <h3 class="widget-title">{{__('Colors')}}</h3>
                     <div class="colors-list">
                         @foreach($colors as $color)
@@ -288,7 +288,7 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
